@@ -1,6 +1,4 @@
 # Node.js
-.next
-.vercel
 *.log
 .env
 .env.local
