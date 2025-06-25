@@ -60,7 +60,7 @@ export default function Home() {
     setSuggestedClaims([]);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/breakdown-claim', {
+      const response = await fetch('/api/breakdown-claim', {
         method: 'POST',
         mode: 'cors',
         headers: { 'Content-Type': 'application/json' },
@@ -92,7 +92,7 @@ export default function Home() {
 
   const analyzeSpecificClaim = async (claimToAnalyze: string) => {
     try {
-      const response = await fetch('http://127.0.0.1:8000/verify-claim', {
+      const response = await fetch('/api/verify-claim', {
         method: 'POST',
         mode: 'cors',
         headers: { 'Content-Type': 'application/json' },

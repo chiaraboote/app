@@ -1,4 +1,19 @@
 {
   "version": 2,
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "functions": {
+    "api/index.py": {
+      "runtime": "python3.9"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/index.py"
+    }
+  ],
+  "env": {
+    "GOOGLE_API_KEY": "@google_api_key",
+    "NCBI_API_KEY": "@ncbi_api_key"
+  }
 } 

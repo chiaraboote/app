@@ -3,8 +3,11 @@ import google.generativeai as genai
 from typing import List, Dict, Any
 
 # Configure the Gemini client
-# GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY") # Temporarily hardcoding for debugging
-genai.configure(api_key="AIzaSyAKXR8abOnE_yInp-dUjoJLYhwN5k95Tf8")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+if GOOGLE_API_KEY:
+    genai.configure(api_key=GOOGLE_API_KEY)
+else:
+    raise ValueError("GOOGLE_API_KEY environment variable is required")
 
 # Set up the models
 classification_model = genai.GenerativeModel('gemini-1.5-flash')
