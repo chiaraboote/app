@@ -14,6 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      {/* NO FONT CLASSNAMES HERE */}
       <body>{children}</body>
     </html>
   );
