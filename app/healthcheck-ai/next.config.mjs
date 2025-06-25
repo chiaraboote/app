@@ -5,7 +5,7 @@ const nextConfig = {
   // This is the fix.
   // We are explicitly disabling the feature that uses lightningcss.
   experimental: {
-    css: false,
+    useLightningcss: false,
   },
 };
 
