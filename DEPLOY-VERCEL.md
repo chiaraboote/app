@@ -3,7 +3,7 @@
 ## What You Get:
 - ✅ Frontend: Fast Next.js app
 - ✅ Backend: Python API as serverless functions
-- ⚠️ Limitations: 10-second timeout, cold starts
+- ⚠️ Limitations: 30-second timeout, cold starts
 
 ## Deploy Steps:
 
@@ -39,7 +39,11 @@ Vercel will automatically deploy. Your app will be at:
 - ⚡ **Frontend**: Instant load
 - 🐌 **First API call**: 3-5 seconds (cold start)
 - ⚡ **Follow-up calls**: ~1-2 seconds
-- ⏱️ **Timeout**: 10 seconds max per request
+- ⏱️ **Timeout**: 30 seconds max per request
+
+## Runtime Fixed:
+✅ No more "runtimes must have a valid version" error!
+✅ Vercel automatically detects Python files in `/api/`
 
 ## If Issues:
 Check Vercel Function logs in dashboard for any Python errors.
